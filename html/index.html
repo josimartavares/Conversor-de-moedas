@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de moedas</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="shortcut icon" href="../Assets/money-svgrepo-com.svg" type="image/x-icon">
+
+     
+    </head>
+
+
+
+    <body>
+        <div class="wrapper">
+            <main class="structure"><!--display flex-->
+                <div class="figure">
+                    <img class="figure" src="../Assets/sacodinheiro.png" alt>
+
+                </div><!--fim das figuras-->
+
+                <div class="selectors">
+                    <label class="seletor" for="Convert-from">Converter
+                        <b>de:</b><br>
+                        <select name id="Convert-from" class="seletores  select1">
+                            <option value="BRL">Real brasileiro</option>
+                            <option value="USD">Dolar americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="BTC">Bitcoin</option>
+                        </select>
+                    </label>
+                    <!-- divisao dos seletores-->
+
+                    <label class="seletor" for="Convert-to">Converter
+                        <b>para:</b> <br>
+                        <select name id="Convert-to" class="seletores select2">
+                            <option value="USD">Dolar Americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="BTC">Bitcoin</option>
+                            <option value="BRL">Real brasileiro</option>
+                        </select>
+                    </label>
+                    <!-- divisao do imput-->
+
+                    <label class="seletor" for="valor">
+                        Valor : <br>
+                        <input type="number" id="valor"
+                            placeholder="Digite o valor" class="valor">
+
+                    </label>
+
+                    <button class="convert-button">Converter</button>
+
+                    <div class="result"><!--Inicio dos resultados-->
+                        <div class="from">
+                            <img id="fig1" src="../Assets/brasil 2.png" alt>
+                            <p class="currency-name">R$ Brasileiro</p>
+                            <p class="currency-value-convert" id="recebe"><b>0,00</b></p>
+                        </div>
+
+                        <img id="setinhas" src="../Assets/setinhas.png" alt="">
+
+
+                        <div class="from">
+                            <img id="fig2" src="../Assets/usa.png" alt>
+                            <p id="name">US$ Dolar Americano</p>
+                            <p class="currency-value" id="converte"><b>0,00</b></p>
+                        </div>
+                    </div> <!--Fim do resultado-->
+
+                </div><!--fim dos seletores-->
+
+            </main><!--corpo do conversor-->
+
+        </div> <!--todo a pagina-->
+
+    </body>
+
+    <script src="../JavaScript/outroscript.js"></script>
+
+</html>
